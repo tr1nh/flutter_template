@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-extension CustomRadius on BorderRadius {
+extension CRadius on BorderRadius {
   static const BorderRadius none = BorderRadius.all(Radius.circular(0));
   static const BorderRadius sm = BorderRadius.all(Radius.circular(2));
   static const BorderRadius base = BorderRadius.all(Radius.circular(4));
@@ -9,6 +9,7 @@ extension CustomRadius on BorderRadius {
   static const BorderRadius xl = BorderRadius.all(Radius.circular(12));
   static const BorderRadius xl2 = BorderRadius.all(Radius.circular(16));
   static const BorderRadius xl3 = BorderRadius.all(Radius.circular(24));
+  static const BorderRadius full = BorderRadius.all(Radius.circular(100));
 
   BorderRadius get tnone => copyWith(
         topLeft: const Radius.circular(0),
@@ -41,6 +42,10 @@ extension CustomRadius on BorderRadius {
   BorderRadius get txl3 => copyWith(
         topLeft: const Radius.circular(24),
         topRight: const Radius.circular(24),
+      );
+  BorderRadius get tfull => copyWith(
+        topLeft: const Radius.circular(100),
+        topRight: const Radius.circular(100),
       );
 
   BorderRadius get rnone => copyWith(
@@ -75,6 +80,10 @@ extension CustomRadius on BorderRadius {
         topRight: const Radius.circular(24),
         bottomRight: const Radius.circular(24),
       );
+  BorderRadius get rfull => copyWith(
+        topLeft: const Radius.circular(100),
+        topRight: const Radius.circular(100),
+      );
 
   BorderRadius get bnone => copyWith(
         bottomRight: const Radius.circular(0),
@@ -107,6 +116,10 @@ extension CustomRadius on BorderRadius {
   BorderRadius get bxl3 => copyWith(
         bottomRight: const Radius.circular(24),
         bottomLeft: const Radius.circular(24),
+      );
+  BorderRadius get bfull => copyWith(
+        topLeft: const Radius.circular(100),
+        topRight: const Radius.circular(100),
       );
 
   BorderRadius get lnone => copyWith(
@@ -141,6 +154,10 @@ extension CustomRadius on BorderRadius {
         bottomLeft: const Radius.circular(24),
         topLeft: const Radius.circular(24),
       );
+  BorderRadius get lfull => copyWith(
+        topLeft: const Radius.circular(100),
+        topRight: const Radius.circular(100),
+      );
 
   BorderRadius get trnone => copyWith(topRight: const Radius.circular(0));
   BorderRadius get trsm => copyWith(topRight: const Radius.circular(2));
@@ -150,6 +167,7 @@ extension CustomRadius on BorderRadius {
   BorderRadius get trxl => copyWith(topRight: const Radius.circular(12));
   BorderRadius get trxl2 => copyWith(topRight: const Radius.circular(16));
   BorderRadius get trxl3 => copyWith(topRight: const Radius.circular(24));
+  BorderRadius get trfull => copyWith(topRight: const Radius.circular(100));
 
   BorderRadius get brnone => copyWith(bottomRight: const Radius.circular(0));
   BorderRadius get brsm => copyWith(bottomRight: const Radius.circular(2));
@@ -159,6 +177,7 @@ extension CustomRadius on BorderRadius {
   BorderRadius get brxl => copyWith(bottomRight: const Radius.circular(12));
   BorderRadius get brxl2 => copyWith(bottomRight: const Radius.circular(16));
   BorderRadius get brxl3 => copyWith(bottomRight: const Radius.circular(24));
+  BorderRadius get brfull => copyWith(topRight: const Radius.circular(100));
 
   BorderRadius get blnone => copyWith(bottomLeft: const Radius.circular(0));
   BorderRadius get blsm => copyWith(bottomLeft: const Radius.circular(2));
@@ -168,6 +187,7 @@ extension CustomRadius on BorderRadius {
   BorderRadius get blxl => copyWith(bottomLeft: const Radius.circular(12));
   BorderRadius get blxl2 => copyWith(bottomLeft: const Radius.circular(16));
   BorderRadius get blxl3 => copyWith(bottomLeft: const Radius.circular(24));
+  BorderRadius get blfull => copyWith(topRight: const Radius.circular(100));
 
   BorderRadius get tlnone => copyWith(topLeft: const Radius.circular(0));
   BorderRadius get tlsm => copyWith(topLeft: const Radius.circular(2));
@@ -177,4 +197,5 @@ extension CustomRadius on BorderRadius {
   BorderRadius get tlxl => copyWith(topLeft: const Radius.circular(12));
   BorderRadius get tlxl2 => copyWith(topLeft: const Radius.circular(16));
   BorderRadius get tlxl3 => copyWith(topLeft: const Radius.circular(24));
+  BorderRadius get tlfull => copyWith(topRight: const Radius.circular(100));
 }

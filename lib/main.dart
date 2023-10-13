@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'widgets/custom_colors.dart';
-import 'widgets/custom_shadow.dart';
-import 'widgets/custom_text_style.dart';
+import 'widgets/c_border.dart';
+import 'widgets/c_colors.dart';
+import 'widgets/c_padding.dart';
+import 'widgets/c_radius.dart';
+import 'widgets/c_shadow.dart';
+import 'widgets/c_text_style.dart';
 import 'widgets/spacing.dart';
 
 void main() {
@@ -18,16 +21,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: CustomColors.primary),
+        colorScheme: ColorScheme.fromSeed(seedColor: CColors.primary),
         useMaterial3: true,
         appBarTheme: const AppBarTheme(
           backgroundColor: Colors.white,
-          foregroundColor: CustomColors.gray700,
+          foregroundColor: CColors.gray700,
         ),
         textTheme: GoogleFonts.robotoTextTheme(
           Theme.of(context).textTheme.apply(
-                bodyColor: CustomColors.gray700,
-                displayColor: CustomColors.gray700,
+                bodyColor: CColors.gray700,
+                displayColor: CColors.gray700,
               ),
         ),
       ),
@@ -44,10 +47,11 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Container(
-          padding: const EdgeInsets.all(Spacing.p6),
-          decoration: const BoxDecoration(
+          padding: CPadding.p6,
+          decoration: BoxDecoration(
             color: Colors.white,
-            boxShadow: CustomShadow.md,
+            border: Border.fromBorderSide(CBorder.w1.gray200),
+            borderRadius: CRadius.base,
           ),
           child: Text('Hello Flutter', style: const TextStyle().base),
         ),

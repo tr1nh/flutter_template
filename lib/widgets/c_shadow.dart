@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class CustomShadow {
+class CShadow {
   static const List<BoxShadow> sm = [
     BoxShadow(
       offset: Offset(0, 1),

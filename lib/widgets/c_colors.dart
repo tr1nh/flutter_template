@@ -1,23 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CustomColors {
-  static const int _primaryValue = 0xFF3742FA;
-
-  static const MaterialColor primary = MaterialColor(
-    _primaryValue,
-    <int, Color>{
-      50: Color(0xFFE8EAF6),
-      100: Color(0xFFC5CAE9),
-      200: Color(0xFF9FA8DA),
-      300: Color(0xFF7986CB),
-      400: Color(0xFF5C6BC0),
-      500: Color(_primaryValue),
-      600: Color(0xFF303F9F),
-      700: Color(0xFF283593),
-      800: Color(0xFF1A237E),
-      900: Color(0xFF0D1B5A),
-    },
-  );
+class CColors {
+  static const Color primary = blue600;
 
   static const Color slate50 = Color(0xfff8fafc);
   static const Color slate100 = Color(0xfff1f5f9);

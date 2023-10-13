@@ -1,6 +1,6 @@
 class Spacing {
   static const double p0 = 0;
-  static const double p = 1;
+  static const double ppx = 1;
   static const double p0_5 = 2;
   static const double p1 = 4;
   static const double p1_5 = 6;
