@@ -198,4 +198,26 @@ extension CRadius on BorderRadius {
   BorderRadius get tlxl2 => copyWith(topLeft: const Radius.circular(16));
   BorderRadius get tlxl3 => copyWith(topLeft: const Radius.circular(24));
   BorderRadius get tlfull => copyWith(topRight: const Radius.circular(100));
+
+  static BorderRadius a(double v) => BorderRadius.all(Radius.circular(v));
+  BorderRadius t(double v) => copyWith(
+        topLeft: Radius.circular(v),
+        topRight: Radius.circular(v),
+      );
+  BorderRadius r(double v) => copyWith(
+        topLeft: Radius.circular(v),
+        bottomRight: Radius.circular(v),
+      );
+  BorderRadius b(double v) => copyWith(
+        bottomRight: Radius.circular(v),
+        bottomLeft: Radius.circular(v),
+      );
+  BorderRadius l(double v) => copyWith(
+        bottomLeft: Radius.circular(v),
+        topLeft: Radius.circular(v),
+      );
+  BorderRadius tr(double v) => copyWith(topRight: Radius.circular(v));
+  BorderRadius br(double v) => copyWith(bottomRight: Radius.circular(v));
+  BorderRadius bl(double v) => copyWith(bottomLeft: Radius.circular(v));
+  BorderRadius tl(double v) => copyWith(topLeft: Radius.circular(v));
 }

@@ -253,4 +253,7 @@ extension CBorder on BorderSide {
   BorderSide get rose800 => copyWith(color: CColors.rose800);
   BorderSide get rose900 => copyWith(color: CColors.rose900);
   BorderSide get rose950 => copyWith(color: CColors.rose950);
+
+  static BorderSide w(double v) => BorderSide(width: v);
+  BorderSide c(Color v) => copyWith(color: v);
 }

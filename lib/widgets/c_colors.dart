@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 class CColors {
-  static const Color primary = blue600;
+  static const Color primary = blue700;
 
+  static const Color white = Color(0xffffffff);
   static const Color slate50 = Color(0xfff8fafc);
   static const Color slate100 = Color(0xfff1f5f9);
   static const Color slate200 = Color(0xffe2e8f0);

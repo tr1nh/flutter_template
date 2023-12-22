@@ -36,6 +36,7 @@ extension CTextStyle on TextStyle {
   TextStyle get lineThrough => copyWith(decoration: TextDecoration.lineThrough);
   TextStyle get overline => copyWith(decoration: TextDecoration.overline);
 
+  TextStyle get white => copyWith(color: CColors.white);
   TextStyle get primary => copyWith(color: CColors.primary);
   TextStyle get slate50 => copyWith(color: CColors.slate50);
   TextStyle get slate100 => copyWith(color: CColors.slate100);

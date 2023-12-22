@@ -1,4 +1,4 @@
-class Breakpoint {
+class CBreakpoint {
   static const double sm = 640;
   static const double md = 768;
   static const double lg = 1024;

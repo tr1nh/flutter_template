@@ -1,41 +1,41 @@
 import 'package:flutter/material.dart';
 
 extension CPadding on EdgeInsets {
-  static const EdgeInsets p0 = EdgeInsets.all(0);
-  static const EdgeInsets ppx = EdgeInsets.all(1);
-  static const EdgeInsets p0_5 = EdgeInsets.all(2);
-  static const EdgeInsets p1 = EdgeInsets.all(4);
-  static const EdgeInsets p1_5 = EdgeInsets.all(6);
-  static const EdgeInsets p2 = EdgeInsets.all(8);
-  static const EdgeInsets p2_5 = EdgeInsets.all(10);
-  static const EdgeInsets p3 = EdgeInsets.all(12);
-  static const EdgeInsets p3_5 = EdgeInsets.all(14);
-  static const EdgeInsets p4 = EdgeInsets.all(16);
-  static const EdgeInsets p5 = EdgeInsets.all(20);
-  static const EdgeInsets p6 = EdgeInsets.all(24);
-  static const EdgeInsets p7 = EdgeInsets.all(28);
-  static const EdgeInsets p8 = EdgeInsets.all(32);
-  static const EdgeInsets p9 = EdgeInsets.all(36);
-  static const EdgeInsets p10 = EdgeInsets.all(40);
-  static const EdgeInsets p11 = EdgeInsets.all(44);
-  static const EdgeInsets p12 = EdgeInsets.all(48);
-  static const EdgeInsets p14 = EdgeInsets.all(56);
-  static const EdgeInsets p16 = EdgeInsets.all(64);
-  static const EdgeInsets p20 = EdgeInsets.all(80);
-  static const EdgeInsets p24 = EdgeInsets.all(96);
-  static const EdgeInsets p28 = EdgeInsets.all(112);
-  static const EdgeInsets p32 = EdgeInsets.all(128);
-  static const EdgeInsets p36 = EdgeInsets.all(144);
-  static const EdgeInsets p40 = EdgeInsets.all(160);
-  static const EdgeInsets p44 = EdgeInsets.all(176);
-  static const EdgeInsets p48 = EdgeInsets.all(192);
-  static const EdgeInsets p52 = EdgeInsets.all(208);
-  static const EdgeInsets p56 = EdgeInsets.all(224);
-  static const EdgeInsets p60 = EdgeInsets.all(240);
-  static const EdgeInsets p64 = EdgeInsets.all(256);
-  static const EdgeInsets p72 = EdgeInsets.all(288);
-  static const EdgeInsets p80 = EdgeInsets.all(320);
-  static const EdgeInsets p96 = EdgeInsets.all(384);
+  static const EdgeInsets a0 = EdgeInsets.all(0);
+  static const EdgeInsets apx = EdgeInsets.all(1);
+  static const EdgeInsets a0_5 = EdgeInsets.all(2);
+  static const EdgeInsets a1 = EdgeInsets.all(4);
+  static const EdgeInsets a1_5 = EdgeInsets.all(6);
+  static const EdgeInsets a2 = EdgeInsets.all(8);
+  static const EdgeInsets a2_5 = EdgeInsets.all(10);
+  static const EdgeInsets a3 = EdgeInsets.all(12);
+  static const EdgeInsets a3_5 = EdgeInsets.all(14);
+  static const EdgeInsets a4 = EdgeInsets.all(16);
+  static const EdgeInsets a5 = EdgeInsets.all(20);
+  static const EdgeInsets a6 = EdgeInsets.all(24);
+  static const EdgeInsets a7 = EdgeInsets.all(28);
+  static const EdgeInsets a8 = EdgeInsets.all(32);
+  static const EdgeInsets a9 = EdgeInsets.all(36);
+  static const EdgeInsets a10 = EdgeInsets.all(40);
+  static const EdgeInsets a11 = EdgeInsets.all(44);
+  static const EdgeInsets a12 = EdgeInsets.all(48);
+  static const EdgeInsets a14 = EdgeInsets.all(56);
+  static const EdgeInsets a16 = EdgeInsets.all(64);
+  static const EdgeInsets a20 = EdgeInsets.all(80);
+  static const EdgeInsets a24 = EdgeInsets.all(96);
+  static const EdgeInsets a28 = EdgeInsets.all(112);
+  static const EdgeInsets a32 = EdgeInsets.all(128);
+  static const EdgeInsets a36 = EdgeInsets.all(144);
+  static const EdgeInsets a40 = EdgeInsets.all(160);
+  static const EdgeInsets a44 = EdgeInsets.all(176);
+  static const EdgeInsets a48 = EdgeInsets.all(192);
+  static const EdgeInsets a52 = EdgeInsets.all(208);
+  static const EdgeInsets a56 = EdgeInsets.all(224);
+  static const EdgeInsets a60 = EdgeInsets.all(240);
+  static const EdgeInsets a64 = EdgeInsets.all(256);
+  static const EdgeInsets a72 = EdgeInsets.all(288);
+  static const EdgeInsets a80 = EdgeInsets.all(320);
+  static const EdgeInsets a96 = EdgeInsets.all(384);
 
   EdgeInsets get t0 => copyWith(top: 0);
   EdgeInsets get tpx => copyWith(top: 1);
@@ -180,4 +180,11 @@ extension CPadding on EdgeInsets {
   EdgeInsets get l72 => copyWith(left: 288);
   EdgeInsets get l80 => copyWith(left: 320);
   EdgeInsets get l96 => copyWith(left: 384);
+
+  static EdgeInsets a(double v) => EdgeInsets.all(v);
+
+  EdgeInsets t(double v) => copyWith(top: v);
+  EdgeInsets h(double v) => copyWith(right: v);
+  EdgeInsets b(double v) => copyWith(bottom: v);
+  EdgeInsets l(double v) => copyWith(left: v);
 }
